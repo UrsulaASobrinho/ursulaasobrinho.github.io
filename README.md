@@ -1,2 +1,0 @@
-# ursulaasobrinho.github.io
-Blog
