@@ -458,12 +458,17 @@
                                                 <tr>
                                                     <th scope="row">3</th>
                                                     <td><a href="#l13">executando o dockerfile</a></td>
-                                                    <td>passo-a-passo</td>
+                                                    <td>comando utilizado e o resultado no browser</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">4</th>
-                                                    <td><a href="#l14 ">exemplos </a></td>
-                                                    <td>passo-a-passo</td>
+                                                    <td><a href="#l14">copiando projeto para container</a></td>
+                                                    <td>Uma fez que criou seu app/projeto copia para o container dentro do volume criando /var/www/html</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">5</th>
+                                                    <td><a href="#l15 ">exemplos </a></td>
+                                                    <td>repositorio  https://github.com/UrsulaASobrinho/website com  exemplos de dockerfile</td>
                                                 </tr>
                                                
 
@@ -472,18 +477,185 @@
                                         </table>
                                     </center>
                                 </div>
-                                <div id="l11" class="div-margin">
-                                    <p>
-                                        <h>Dockerfile</h>
-                                    </p>
-                                </div>
+                                <div id="l11" class="div-margin"><p><b>Dockerfile</b></p></div>
                                
                                 Para que serve - um arquivo que junta os comandos de instalacao de uma imagem<br>
                                 podendo esta imagem ser uma simple copia ou uma imagem configurada com
                                 parametrizacao/necessidades do aplicatico.
-
-                               
+                                
+                                <br>
                                 <a href="#l00">indice </a><br />
+
+                                <div id="l12" class="div-margin"><p><b>Criando um arquivo dockerfile</b></p></div>
+                                <br>
+                                <b>Partirndo do principio que ja tenha instalado no seu pc docker, visual Studio Code, e de preferecia tambem o git</b>
+                                <br><br>
+                                mkdir website [enter] Passos simples, crie um diretorio<br>
+                                cd website [enter] <br>
+                                code .  [enter] uam vez dentro do diretorio criado chame o visual studio code<br>
+                                Uma vez dentro no vscode crie o arquivos dockerfile, veja esse exemplo abaixo: <br><br>
+
+                                
+                                <div class="col-sm-10">
+                                    <center>
+                                <table class="table table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">dockerfile</th>
+                                            <th scope="col">explica linha a linha</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td> FROM ubuntu</td>
+                                                <td>Comando que inicia a execucao ja sabemos que e a primeira linha </td> 
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>RUN apt-get update -y</td>
+                                                <td>atualzia</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>RUN apt-get install apache2 -y</td>
+                                                <td>instala no caso aqui a opcao foi servdor apache</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td># Variaveis ​​de ambiente no Apache, estas variaveis estao vinculadas apache2.conf</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>ENV APACHE_LOCK_DIR="/var/lock/apache2"</td>
+                                                <td>aqui ja sao aqueles comoando extra, neste caso estou configurando as variaveis de ambiente do apache</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>ENV APACHE_PID_FILE="/var/run/apache2/apache2.pid"</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td> ENV APACHE_RUN_USER="www-data"</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td> ENV APACHE_RUN_GROUP="www-data"</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>ENV APACHE_LOG_DIR="/var/log/apache2"</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>ENV APACHE_SERVER_NAME="localhost"</td>
+                                                <td></td>
+                                            </tr>
+                                           
+                                            <tr>
+                                                <td>10</td>
+                                                <td> VOLUME /var/www/html/</td>
+                                                 <td>Aqui monta o volume que sera o diretorio onde vamos colocar o projeto/app </td>
+                                            </tr>
+                                           
+                                            <tr>
+                                                <td>11</td>
+                                                <td>#Este e o arquivo de configuracao principal do servidor.</td>
+                                                <td></td>
+                                             </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td>COPY apache-conf /etc/apache2/apache2.conf</td>
+                                                <td>Aqui quando criei o diretorio no pc copiei para a pasta esse arquivo, que faz as varieaveis de ambiente que configurei acima</td>
+                                            </tr>
+                                           
+                                            <tr>
+                                                <td>13</td>
+                                                <td>#Expose Apache</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>14</td>
+                                                <td>EXPOSE 80</td>
+                                                <td>Aqui determina qual porta sera disponibilizada no container</td>
+                                            </tr>
+                                            <tr><td>15</td>
+                                                <td># Launch Apache2</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr> 
+                                                <td>16</td>
+                                                <td>CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]</td>
+                                                <td>Sempre a ultima linha executa observe que o caminho e configuracao do apace </td>
+                                            </tr>
+                                            
+                                        </tr> 
+                                
+                                    </tbody>
+                                </table>
+                                </center>
+                                </div>
+                                <br>
+                                <div id="l13" class="div-margin"><p><b>Executando o dockerfile</b></p></div>
+                                 <br>
+                                 NO Vcode va para um terminal<br>
+                                 vamos gerar a imagem, com o seguinyte comando<br>
+                                 <div class="col-sm-10">
+                                    <center>
+                                <table class="table table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">comando</th>
+                                            <th scope="col">explica linha a linha</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td> docker image build -t website .</td>
+                                                <td>docker image build -t nome da imagem (ponto) qoer dizer neste diretorio. Automaticamente va procurar o dockerfile </td> 
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td> docker image ls</td>
+                                                <td>Este comando mostra a imagem criada </td> 
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td> docker container run -d -p8081:80 website</td>
+                                                <td>cria o conatiner (onde vamos colocar o projeto) run(executa) -d -p(porta do PC local):(porta que se colocou no dockerfile) nome da imagem que gerou e vai utilizar   </td> 
+                                            </tr>
+                                    </tbody>
+                                </table>
+                                </center>
+                                </div>
+                                <Br> Agora e so testar abrindo um browser e digitar http://localhost:8081/ <br>
+                                    <a href="#l00">indice </a><br />
+
+                                    <div id="l14" class="div-margin"><p><b>copiando projeto para container </b></p></div>
+                                    <br>
+
+                                    No terminal que abriu dentro do vscode, tem quer saber qual e o nome do container_id<br>
+                                    localize uma sequencia de codigo abaixo no nome CONTAINER_ID <br><br>
+                                    docker container ls [enter]<br>
+                                    este sera seu como exemplo aqui  o container sera este   CONTAINER ID = 08482cd96ade <br>
+                                    docker cp . 08482cd96ade:/var/www/html [enter] <br>
+                                    Observer (08482cd96ade) o id do container encontrado (/var/www/html ) o voluem que criamos no dockerfile
+                                    <br>volte a seu browser  e  estara seu projeto. <br>
+                                    <a href="#l00">indice </a><br />
+
+
                                 <!-- fim falando dockerfile-->
                             </div>
 
