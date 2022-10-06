@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP CDN -->
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- ANIMATE.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <! -- CUSTOM CSS -->
+        <link rel="stylesheet" href="public/css/main.css">
+        <link rel="stylesheet" href="public/css/style.css">
+
+        <style type="text/css">
+            /*<![CDATA[*/
+            /* temp */
+
+            .profile-posts .navbar {
+                background-color: grey;
+                min-height: 60px;
+            }
+
+            .profile-posts .navbar-default .navbar-text {
+                color: #ffffff;
+            }
+
+            .profile-posts .nav-tabs>li.active>a,
+            .profile-posts .nav-tabs>.profile-posts li.active>a:focus,
+            .profile-posts .nav-tabs>li.active>a:hover {
+                color: #555;
+                cursor: default;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-bottom-color: rgb(221, 221, 221);
+                border-bottom-color: transparent;
+            }
+
+            /*]]>*/
+        </style>
+
+        <title></title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Material de Apoio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../../index.html">Home
+
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/contato.html"><i class="fas fa-envelope"></i> Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="profile-posts tab">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h4><br>
+                <center>DevOps - Nivel Basico</center><br>
+            </h4>
+        </section>
+        <!-- Main content -->
+        <div class="row">
+            <div class="col-2">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                        aria-controls="v-pills-home" aria-selected="true" name="v-pills-home-tab">Git</a>
+
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                        aria-controls="v-pills-profile" aria-selected="false" name="v-pills-profile-tab">Docker</a>
+
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                        aria-controls="v-pills-messages" aria-selected="false" name="v-pills-messages-tab">Jenkins</a>
+
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                        aria-controls="v-pills-settings" aria-selected="false" name="v-pills-settings-tab">Zabbis</a>
+
+
+                    <a class="nav-link" id="v-pills-settingss-tab" data-toggle="pill" href="#v-pills-settingss"
+                        role="tab" aria-controls="v-pills-settingss" aria-selected="false"
+                        name="v-pills-settingss-tab">Gramafa</a>
+
+                </div>
+
+            </div>
+
+            <div class="col-10">
+                <div class="tab-content" id="v-pills-tabContent">
+
+
+                    <!-- opcao 1 menu lateral -->
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab">
+
+                        <!-- Nav tabs opcoes sub menu -->
+                        <ul class="nav nav-tabs">
+                            <li><a class="nav-link active" href="#first" data-toggle="tab">Git/GitHub/GitLab</a></li>
+
+                            <li><a class="nav-link" href="#second" data-toggle="tab">Clone/commit</a></li>
+
+                            <li><a class="nav-link" href="#third" data-toggle="tab">VsCode</a></li>
+                        </ul><!-- Nav tabs content -->
+
+                        <div class="tab-content">
+                            <div id="first" class="tab-pane active">
+                                <!-- falando de git-->
+                                <br><br>
+                                <h4>Git, GitHub e GitLab</h4>
+                                <br><br>
+                                <h5>O que e</h5>
+                                <br>
+                                <b>O Git</b> - um Sistema de Controle de Versoes. Tipo quando faço alteracoes em um
+                                sistema,
+                                etiquetamos aquela alteracao, jogando a informacao das alteracoes feitas, e
+                                quando essas alteracoes nao ficaram corretas, podemos retornar a outra versão antes
+                                da alteraco sem problemas.
+                                <br><br>
+                                <b>O GitHub</b> - é uma plataforma totalmente online e hospedar neles seus projetos,
+                                aqui onde o armazenamos as versoes de colaborar com softwares open source,
+                                seguir outros(as) programadores(as) e interagir com codigos de terceiros. de forma
+                                publica ou
+                                de forma particular.
+                                <br><br>
+                                <b>O que os dois formam em comum</b>
+                                <br><br>
+                                Bem simples no Git versionamos no GitHub armazenamos, porém de grande utilizade - o
+                                GitHub
+                                totalmente online - podemos compartilhar os sistemas
+                                com diversos coloboradores e todos interagir no mesmo com alteraçoes sem perda de
+                                versões
+                                Em diversas partes do sistemas por diversos programadores
+                                que compartilham um projeto. E evita conflitos de versoes tipo se alguem fez a mesma
+                                alteracao no
+                                mesmo lugar
+                                existe um controle de alerta.
+                                <br><br>
+                                <b>O GitLab</b> - digamos que seja uma versao mais utilizada para determinados
+                                necessidades
+                                de forma simples faz a mesma coisa que o GitHub porém para DevOps vai alem disso.
+                                Tipo, o versionamento criar ramificacoes. um processo de teste de varias etapas.
+                                <br><br>
+
+
+
+                                <h5>Instalacao</h5>
+                                <br>
+                                No site https://git-scm.com fiz o dewnloads da ultima versao, no meu caso ja
+                                identificou que estou  em ambiente windows 10 de 64x. Apenas cliquei em Next. A instalacao é bem simples e
+                                facil.
+                                <br><br>
+                                No site https://github.com/ fiz o cadastro de um usuario
+                                <br><br>
+                                No site https://gitlab.com/ fiz o cadastro de um usuario
+                                <br><br>
+                                <!--fim landogit-->
+                            </div>
+
+                            <div id="second" class="tab-pane">
+                                Menu 2 items
+                            </div>
+
+                            <div id="third" class="tab-pane">
+                                Menu 3 items
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--fechamento opcao 1 menu lateral -->
+
+                    <!-- opcao 2 menu lateral -->
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab">
+
+                        <!-- Nav tabs opcoes sub menu -->
+                        <ul class="nav nav-tabs">
+                            <li><a class="nav-link active" href="#first2" data-toggle="tab">Docker</a></li>
+
+                            <li><a class="nav-link" href="#second2" data-toggle="tab">Dockerfie</a></li>
+
+                            <li><a class="nav-link" href="#third2" data-toggle="tab">Docker-compose</a></li>
+                        </ul><!-- Nav tabs content -->
+
+                        <div class="tab-content">
+                            <div id="first2" class="tab-pane active">
+                                <!-- falando docker-->
+                                <div class="col-sm-10">
+                                    <center>
+                                        <table class="table table-dark">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">
+                                                        <div id="l0" class="div-margin">Indice</div>
+                                                    </th>
+                                                    <th scope="col"></th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td><a href="#l1">O que e Docker</a></td>
+                                                    <td>Entendendo</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td><a href="#l2">Instalacao Docker Desktop no Windows</a></td>
+                                                    <td>Este foi o melhor que encontrei e sem erros de execucao!</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td><a href="#l3">Comandos basico</a></td>
+                                                    <td>o que faz cada comando</td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </center>
+                                </div>
+
+
+                                <div id="l1" class="div-margin">
+                                    <p>
+                                        <h>O que e</h>
+                                    </p>
+                                </div>
+                                <a href="#l0">indice </a><br />
+                                <br>
+                                <b>O Docker</b> Uma das principais vantagnes - mantem seu espaço de trabalho limpo, pois
+                                cada um de seus ambientes sera isolado e pode exclui-los
+                                a qualquer momento, sem impactar o resto. Nao da conflito de softwares. Pode simplesmete
+                                retira o containr, a imagem, e começar tudo de novo
+                                <br>
+                                As imagens ficam armazenadas do DockerHub, tem várias ja com algumas configuracoes. Faça
+                                sei cadastro e
+                                para armazenas as suas configuracoes/imagens
+                                <br><br>
+
+
+                                <div id="l2" class="div-margin">
+                                    <p>
+                                    <h5>Instalacao Docker Desktop no Windows</h5>
+                                    </p>
+                                </div>
+                                <a href="#l0">indice </a><br />
+
+
+                                <br><br>
+                                <b>Pre-requisitos</b>
+                                Existem alguns pre-requisitos que precisamos configurar no windows 10
+                                para saber mais pode consultar Tutorial oficial:
+                                https://docs.microsoft.com/en-us/windows/wsl/install-win10
+                                <br><br>
+
+
+                                <b>Passo 1</b> <br>
+                                (PowerShell Admin): <br> Abre o cmd como admnistrador. e cola copia esse comando abaixo:
+                                <br>
+                                <img src="/public/img-devops/abreCMD.png" class="img-fluid"
+                                    alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+                                <br>
+                                cola copia esse comando abaixo: <br>
+                                dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all
+                                /norestart
+                                <br><br>
+                                <img src="/public/img-devops/digitalcomondaoResultdo.png" class="img-fluid"
+                                    alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+                                <br>Resultado da execução primeiro passo
+                                <br><br>
+                                <b>Passo 2</b> <br>
+                                ainda no (PowerShell Admin): e cola copia esse comando abaixo: <br>
+                                dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+                                <br><br>
+                                <img src="/public/img-devops/digitasegundocomando.png" class="img-fluid"
+                                    alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+                                <br>Resultado da execução segundo passo
+                                <br><br>
+
+
+
+                                <b>Passo 3</b>
+                                REINICIE O COMPUTADOR
+                                <br><br>
+
+                                <b>Passo 4</b>
+                                Abre teu browser e faz o (Download the Linux kernel update package):<br>
+                                copia e cola esse link abaixo para fazer o downloads <br>
+                                https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+                                <br><br>
+                                apos fazer downloads executa<br>
+                                <img src="/public/img-devops/ExecutaArqBaixadoWsl.png" class="img-fluid"
+                                    alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+                                <br><br>
+                                <b>Passo 5</b>
+                                Volta no (PowerShell Admin): e digita o comando abaixo: <br>
+                                wsl --set-default-version 2<br>
+                                <img src="/public/mg-devops/executacomandodenovo.png" class="img-fluid"
+                                    alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+                                <br>Resultado da execucao quinto passo
+                                <br><br>
+
+                                <br><br>
+                                <b>Passo 6</b> (Instale o docker):
+                                Tutorial: https://docs.docker.com/docker-for-windows/install/
+                                <br><br>
+                                Apos dazer o downloads, executa<br>
+                                <img src="/public/img-devops/aposinstalatPrimeiroClick.png" class="img-fluid"
+                                    alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+                                <br><br>
+                                Clica no icone no desctop<br>
+                                <img src="/public/img-devops/dockerinstalado.png" class="img-fluid"
+                                    alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+
+                                <br> Pronto!! <br><a href="#l0">indice </a><br />
+
+                                <div id="l3" class="div-margin">
+                                    <p>
+                                        <h>Comandos basicos</h>
+                                    </p>
+                                </div>
+                              
+
+                                <br>
+                                <p><b>Existe um modelo BASE de comandos </b></p>
+                                Seguinte existe um repositorio/bibliotecas que disponibiliza imagens ja prontas e ate com configuracoes
+                                para certo ambientes, como Apache, Node.js, Wordpress entre outros. Para adquirir essa imagem, devemos
+                                uscar atravez de alguns comandos. Que uma fez executado baixa/uploads dentro do container.
+                                <br>
+                                No exemplo abaixo, estou montando um servidor Apache2 <br>
+
+                                FROM ubuntu:22.04 <br>
+                                RUN apt-get update -y <br>
+                                RUN apt-get install apache2 -y <br>
+                                EXPOSE 80 <br>
+                                CMD [“/usr/local/apache/bin/apachectl”, “-D”, “FOREGROUND”] <br>
+
+
+
+                                <br><br>
+                                <p><b>Entendendo cada linha de comando</b> </p>
+                                <table class="table table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Linha</th>
+                                            <th scope="col">Comandos dockerfile </th>
+                                            <th scope="col">explicacao</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> FROM ubuntu:22.04</td>
+                                            <td> FROM --> E A PRIMEIRA LINHA/COMANDO aqui Criar uma imagem base, ou
+                                                imagem pai. A imagem pai vem de uma biblioteca
+                                                de imagens no caso DcockerHub. ficando assim FROM(comando) ubuntu(nome
+                                                da imagem) : 22.04 (sua versao) </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td> RUN apt-get update -y</td>
+                                            <td> RUN apt-get update -y --> RUN(comando de execuçao) apt-get update
+                                                (Atualiza a imagem) , o -y é para não parar a execução com a pergunta
+                                                confirma(sim ou nao)
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>RUN apt-get install apache2 -y </td>
+                                            <td>RUN apt-get install apache2 -y --> Aqui instala o servidor, no exemplo
+                                                está apache2, poderia ser node.js, entre outros
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td> EXPOSE 80</td>
+                                            <td> EXPOSE 80 --> disponibiliza a porta no containner</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>CMD [“/usr/local/apache/bin/apachectl”, “-D”, “FOREGROUND”] </td>
+                                            <td>CMD [“/usr/local/apache/bin/apachectl”, “-D”, “FOREGROUND”] --> CMD e o
+                                                comando do prompt ou seja va par alinha de comando, os outros sao para
+                                                executar no LOCAL e suas permisoes
+                                                , certamente muda de acordo com qual servico esta instalando.
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <br>
+                                Pode acrescentar varios outros comandos no dockerfile, como criar um pasta MKDIR, ou
+                                copiar um arquivo
+                                por exemplo as variaveis de ambinte pre configuradas.<br>   <a href="#l0">indice </a><br />
+
+                                <!--fim falando docker-->
+                            </div>
+
+                            <div id="second2" class="tab-pane">
+                                <!-- falando dockerfile-->
+                                <div class="col-sm-10">
+                                    <center>
+                                        <table class="table table-dark">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">
+                                                        <div id="l00" class="div-margin">Indice</div>
+                                                    </th>
+                                                    <th scope="col"></th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td><a href="#l11">Dockerfile</a></td>
+                                                    <td>Entendendo</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td><a href="#l12">Criando um arquivo dockerfile</a></td>
+                                                    <td>passo-a-passo</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td><a href="#l13">executando o dockerfile</a></td>
+                                                    <td>passo-a-passo</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td><a href="#l14 ">exemplos </a></td>
+                                                    <td>passo-a-passo</td>
+                                                </tr>
+                                               
+
+
+                                            </tbody>
+                                        </table>
+                                    </center>
+                                </div>
+                                <div id="l11" class="div-margin">
+                                    <p>
+                                        <h>Dockerfile</h>
+                                    </p>
+                                </div>
+                               
+                                Para que serve - um arquivo que junta os comandos de instalacao de uma imagem<br>
+                                podendo esta imagem ser uma simple copia ou uma imagem configurada com
+                                parametrizacao/necessidades do aplicatico.
+
+                               
+                                <a href="#l00">indice </a><br />
+                                <!-- fim falando dockerfile-->
+                            </div>
+
+                            <div id="third2" class="tab-pane">
+                                dockerr Menu 3 items
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <!--fechamento opcao 2 menu lateral -->
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                        aria-labelledby="v-pills-messages-tab">
+                        FooBar
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                        aria-labelledby="v-pills-settings-tab">
+                        FoofooBar
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-settingss" role="tabpanel"
+                        aria-labelledby="v-pills-settingss-tab">
+                        FoofooBar2
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

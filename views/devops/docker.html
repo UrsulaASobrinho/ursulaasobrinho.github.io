@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  <title>Docker</title>
+  <!-- HEAD -->
+  <!-- BOOTSTRAP CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+    integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <!-- ANIMATE.CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <! -- CUSTOM CSS -->
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+
+</head>
+
+<body>
+  <!-- NAVBAR -->
+
+
+  <!-- MAIN CONTENT -->
+  <main role="main">
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+
+
+        <div class="row">
+          <div class="grupo">
+
+
+
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="row">1</th>
+                  <td> <div id="l0" class="div-margin"><p><h>Indice</h></p></div></td>
+                  <td></td>
+                 
+                </tr>
+              </thead>
+              <tbody>
+               
+                <tr>
+                  <th scope="row">2</th>
+                  <td> <a href="#l1">O que é Docker </a><br /></td>
+                  <td>De forma simploria, podemos dizer que ele pega uma espaço e criem container.
+                    e o Um container é um ambiente independentemente isolado. Onde podemos colocar um sistema, configuralo
+                    adcionar aplicatidos tudo
+                    isso sem alterar as configuraçoes dos outros espaços, ou do todo. Dentro desde espaço virtualizando o
+                    sistema operacional do computador.</td>
+                
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td> <a href="#l2">Instalação Docker Desktop no Windows</a><br /></td>
+                  <td> Este foi o melhor que encontrei e sem erros de execução!<br>
+                    instalar o Docker no Windows 10, como habilitar e executar Windows Containers.</td>
+                 
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>  <a href="#l3">Comandos Basicos</a><br /></td>
+                  <td>Basico necessários</td>
+                 
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>   <a href="#l4">Dockerfile</a><br /></td>
+                  <td>Para que serve - um arquivo que junta os comandos de instalação de uma imagem<br>
+                    podendo esta imagem ser uma simple copia ou uma imagem configurada com parametrização/necessidades<br>
+                   do aplicatico</td>
+                 
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>  <a href="#l5">Docker-Compose</a><br /></td>
+                  <td> Pode utilizar junto com dockerfile, caso tenha algumas configurações na sua imagem, ou podera utilizar só ]docker-copose 
+         se vai apenas pegar a imagem. PArticulamente gosto de dividir, cad aum no seu quadrado, mas deve ser porque estou aprendendo 
+         e gosto de saber, e deixa claro o que cada um deve fazer.</td>
+                 
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>  <a href="#l6">Entendendo Volume</a><br />
+                  </td>
+                  <td>the Bird</td>
+                 
+                </tr>
+              </tbody>
+            </table>
+
+
+            
+           
+           
+           
+           
+          
+           
+           
+
+            <br><br>
+            <h4>Docker</h4>
+            <div id="l1" class="div-margin"><p><h>O que é</h></p></div>
+            <a href="#l0">top </a><br />
+            <br>
+            <b>O Docker</b> Uma das principais vantagnes - mantém seu espaço de trabalho limpo, pois cada um de seus ambientes será isolado e você pode excluí-los
+            a qualquer momento, sem impactar o resto. Não dá conflito de softwares. Pode simplesmete retira o containr, a imagem, e começar tudo de novo
+            <br>
+            As imagens ficam armazenadas do DockerHub, tem várias ja com algumas configurações. Faça sei cadastro e 
+            para armazenas as suas configurações/imagens
+            <br><br>
+
+
+            <div id="l2" class="div-margin">
+              <p>
+              <h5>Instalação Docker Desktop no Windows</h5>
+              </p>
+            </div>
+            <a href="#l0">top </a><br />
+          
+           
+            <br><br>
+            <b>Pré-requisitos</b>
+            Existem alguns pré-requisitos que precisamos configurar no windows 10
+            para saber mais pode consultar Tutorial oficial:
+            https://docs.microsoft.com/en-us/windows/wsl/install-win10
+            <br><br>
+
+
+            <b>Passo 1</b> <br>
+            (PowerShell Admin): <br> Abre o cmd como admnistrador. e cola copia esse comando abaixo: <br>
+            <img src="/public/img-devops/abreCMD.png" class="img-fluid" alt="Gerenciados de tarefas para configurar"
+              title="pre-requisitos">
+            <br>
+            cola copia esse comando abaixo: <br>
+            dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+            <br><br>
+            <img src="/public/img-devops/digitalcomondaoResultdo.png" class="img-fluid"
+              alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+            <br>Resultado da execução primeiro passo
+            <br><br>
+            <b>Passo 2</b> <br>
+            ainda no (PowerShell Admin): e cola copia esse comando abaixo: <br>
+            dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+            <br><br>
+            <img src="/public/img-devops/digitasegundocomando.png" class="img-fluid"
+              alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+            <br>Resultado da execução segundo passo
+            <br><br>
+
+
+
+            <b>Passo 3</b>
+            REINICIE O COMPUTADOR
+            <br><br>
+
+            <b>Passo 4</b>
+            Abre teu browser e faz o (Download the Linux kernel update package):<br>
+            copia e cola esse link abaixo para fazer o downloads <br>
+            https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+            <br><br>
+            apos fazer downloads executa<br>
+            <img src="/public/img-devops/ExecutaArqBaixadoWsl.png" class="img-fluid"
+              alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+            <br><br>
+            <b>Passo 5</b>
+            Volta no (PowerShell Admin): e digita o comando abaixo: <br>
+            wsl --set-default-version 2<br>
+            <img src="/public/mg-devops/executacomandodenovo.png" class="img-fluid"
+              alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+            <br>Resultado da execução quinto passo
+            <br><br>
+
+            <br><br>
+            <b>Passo 6</b> (Instale o docker):
+            Tutorial: https://docs.docker.com/docker-for-windows/install/
+            <br><br>
+            Apos dazer o downloads, executa<br>
+            <img src="/public/img-devops/aposinstalatPrimeiroClick.png" class="img-fluid"
+              alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+            <br><br>
+            Clica no icone no desctop<br>
+            <img src="/public/img-devops/dockerinstalado.png" class="img-fluid"
+              alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+
+            <br><br> Pronto!! <br><br>
+
+            <div class="ccard border-dark mb-3" >
+              <div class="card-header">
+                Possi­veis erros
+              </div>
+              <div class="card-body">
+
+                <p class="card-body text-danger">
+                  Verificar os requisitos<br>
+                  Windows 10 Enterprise, Pro ou Education<br>
+                  Processador de 64 bits com SLAT (Conversão de Endereços de Segundo Nível).<br>
+                  Suporte de CPU para a extensão do modo de monitor da VM (VT-c em CPUs Intel).<br>
+                  Mínimo de 4 GB de memória.<br>
+                  <br>
+
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="grupo">
+
+          <br>
+          <div id="l4" class="div-margin"><p><h4>Dockerfile</h4></p></div>
+            <a href="#l0">top </a><br /><br>
+           
+         <br>
+         <p><b>existe um modelo BASE  de comandos no dockerfile</b></p>
+         <br>
+
+         FROM ubuntu:22.04  <br>
+         RUN apt-get update -y <br>
+         RUN apt-get install apache2 -y <br>
+         EXPOSE 80 <br>
+         CMD  [“/usr/local/apache/bin/apachectl”, “-D”, “FOREGROUND”] <br>
+
+
+
+         <br><br>
+         <p><b>Entendendo</b> </p>
+         <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Linha</th>
+      <th scope="col">Comandos dockerfile </th>
+      <th scope="col">explicação</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td> FROM ubuntu:22.04</td>
+      <td> FROM -->  È A PRIMEIRA LINHA/COMANDO aqui Criar uma imagem base, ou imagem pai. A imagem pai vem de uma biblioteca
+        de imagens no caso  DcockerHub. ficando assim FROM(comando) ubuntu(nome da imagem) : 22.04 (sua versão) </td>
+      
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td> RUN apt-get update -y</td>
+      <td> RUN apt-get update -y  --> RUN(comando de execuçao) apt-get update (Atualiza a imagem) , o -y é para não parar a execução com a pergunta confirma(sim ou  não)
+      </td>
+     
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>RUN apt-get install apache2 -y </td>
+      <td>RUN apt-get install apache2 -y -->  Aqui instala o servidor, no exemplo está apache2, poderia ser node.js, entre outros
+      </td>
+      
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td> EXPOSE 80</td>
+      <td> EXPOSE 80 --> disponibiliza a porta no containner</td>
+     
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>CMD  [“/usr/local/apache/bin/apachectl”, “-D”, “FOREGROUND”] </td>
+      <td>CMD  [“/usr/local/apache/bin/apachectl”, “-D”, “FOREGROUND”] --> CMD é o comando do prompt ou seja vá par alinha de comando, os outros são para executar no LOCAL e suas permisoes
+        , certamente muda de acordo com qual serviço esta instalando. 
+       </td>
+     
+    </tr>
+  </tbody>
+</table>
+        
+
+        <br>
+          
+         <br>
+         
+               
+         <br>
+         Pode acrescentar vários outros comandos no dockerfile, como criar um pasta MKDIR, ou copiar um arquivo 
+         por exemplo as variaveis de ambinte pre confic=guradas. 
+
+          </div>  
+        </div>
+
+        <div class="row">
+          <div class="grupo">
+
+          <br>
+          <div id="l4" class="div-margin"><p><h4>Docker-compose</h4></p></div>
+            <a href="#l0">top </a><br /><br>
+           
+         <br>
+         Pode utilizar junto com dockerfile, caso tenha algumas configurações na sua imagem, ou podera utilizar só ]docker-copose 
+         se vai apenas pegar a imagem. PArticulamente gosto de dividir, cad aum no seu quadrado, mas deve ser porque estou aprendendo 
+         e gosto de saber, e deixa claro o que cada um deve fazer.
+         <br>
+        
+
+          </div>  
+        </div>
+
+
+
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+  <!-- FOOTER -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+  <script>
+    // Tooltips Initialization
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+
+
+    })
+  </script>
+
+  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+</body>
+
+</html>
