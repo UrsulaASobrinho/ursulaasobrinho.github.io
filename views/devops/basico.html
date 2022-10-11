@@ -130,10 +130,52 @@
                         <div class="tab-content">
                             <div id="first" class="tab-pane active">
                                 <!-- falando de git-->
+
+                                <div class="col-sm-10">
+                                    <center>
+                                <table class="table table-dark">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col"> <div id="lp0" class="div-margin">Indice</div></th>
+                                        <th scope="col"></th>
+                                        
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td><a href="#lp1">Git, GitHub e GitLab</a></td>
+                                        <td>Entendimento e instalacao</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td><a href="#lp2">Clone e commit</a></td>
+                                        <td>Principais comandos</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td><a href="#lp2">GitHub e GitLab C/VSCode</a></td>
+                                        <td>Usando terminal e click</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td><a href="#lp2">CI CD</a></td>
+                                        <td>entendimento e Processo</td>
+                                        
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  </center>
+                                  </div>
+
                                 <br><br>
                                 <h4>Git, GitHub e GitLab</h4>
                                 <br><br>
-                                <h5>O que e</h5>
+                                <h5><b>O que e</b></h5>
                                 <br>
                                 <b>O Git</b> - um Sistema de Controle de Versoes. Tipo quando faço alteracoes em um
                                 sistema,
@@ -229,14 +271,30 @@
                                                     <td><a href="#l1">O que e Docker</a></td>
                                                     <td>Entendendo</td>
                                                 </tr>
+                                               
                                                 <tr>
                                                     <th scope="row">2</th>
                                                     <td><a href="#l2">Instalacao Docker Desktop no Windows</a></td>
                                                     <td>Este foi o melhor que encontrei e sem erros de execucao!</td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">2</th>
-                                                    <td><a href="#l3">Comandos basico</a></td>
+                                                    <th scope="row">3</th>
+                                                    <td><a href="#l3">O que e uma imagem</a></td>
+                                                    <td>Entendendo</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td><a href="#l4">O que e um container</a></td>
+                                                    <td>Entendendo</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">5</th>
+                                                    <td><a href="#l5">O que e volume</a></td>
+                                                    <td>Entendendo</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">6</th>
+                                                    <td><a href="#l6"><b>Comandos basico</b></a></td>
                                                     <td>o que faz cada comando</td>
                                                 </tr>
 
@@ -247,11 +305,7 @@
                                 </div>
 
 
-                                <div id="l1" class="div-margin">
-                                    <p>
-                                        <h>O que e</h>
-                                    </p>
-                                </div>
+                                <div id="l1" class="div-margin"><p><h>O que e</h></p></div>
                                 <a href="#l0">indice </a><br />
                                 <br>
                                 <b>O Docker</b> Uma das principais vantagnes - mantem seu espaço de trabalho limpo, pois
@@ -259,10 +313,12 @@
                                 a qualquer momento, sem impactar o resto. Nao da conflito de softwares. Pode simplesmete
                                 retira o containr, a imagem, e começar tudo de novo
                                 <br>
-                                As imagens ficam armazenadas do DockerHub, tem várias ja com algumas configuracoes. Faça
-                                sei cadastro e
-                                para armazenas as suas configuracoes/imagens
+                                As imagens ficam armazenadas do DockerHub, tem várias ja com algumas configuracoes. Faca
+                                sei cadastro e para armazenas as suas configuracoes/imagens
                                 <br><br>
+
+                               
+
 
 
                                 <div id="l2" class="div-margin">
@@ -341,14 +397,64 @@
 
                                 <br> Pronto!! <br><a href="#l0">indice </a><br />
 
-                                <div id="l3" class="div-margin">
-                                    <p>
-                                        <h>Comandos basicos</h>
-                                    </p>
-                                </div>
-                              
 
+
+
+                                <div id="l3" class="div-margin"><p><h><b>O que e Imagem</b></h></p></div>
+                                <a href="#l0">indice </a><br />
                                 <br>
+
+                                Bem simples , no celular precisamos do Android ou OS para utilizar-lo. No computador preisamos de win ou linux (exemplo) 
+                                para utilizar-mos. Então no docker precisamos da imagem.
+                                <br>
+                                <B>Onde encontramos as imagens para Baixar ?</B>  No DockerHub existe a maior concentração de imagens e pode baixar com segurança. 
+                                <br>
+                                <B>Imagens oficiais e nao oficiais ?</B> As imagens oficiais do docker sao aquelas sem usuários em seus nomes. A imagem “ubuntu:16.04″
+                                <br>
+                                <B>Como criar imagens ?</B> existem duas formas de criar imagens  com commit e com Dockerfile.
+                                <br><B>Criando imagens com commit</B> exemplo. Primeiro criamos um container qualquer:  <br>
+                                docker container run -it --name containercriado ubuntu:16.04 bash 
+                                <br><B>Criando imagens com Dockerfilet</B> Neste opção se cria um arquivo com o nome docker file dentro os comandos de execucao.
+                                <br>
+                                <br><B>Onde fica as imagens criados no docker/maquina local</B>
+                                Uma vez baixado uma copia no seu computador ele fica armazenada  '/var/lib/docker'<br>
+                               
+                                <b>Precisamos de uma imagem para rodar um container</b>
+                                Resumindo uma imagem  e onde sera definido o que vai rodar ali dentro, (do container) quais as bibliotecas e configuracoes estarao presentes.
+                                <br>
+
+
+                                <div id="l4" class="div-margin"><p><h><b>O que um container</b></h></p></div>
+                                <a href="#l0">indice </a><br />
+                                <br>
+
+                                E um espaco isolado onde sera executado tudo que foi configurado na imagem.
+                                Imagina que seu computador tem wondows e nele esta configurado tudo que preciso para rodar um sistema em laravel
+                                e que tambem esta com node.js e tambem com Linux e  nao conflitam entre si. Por que cada um esta ocupando
+                                espaço totalmente separado do outro. E que posso replicar esse mesmo senario em outra maquina e as limitacoes ou/e configuracoes de minha
+                                maquina local nao influenciara em nada. 
+                                <br><br>
+                                <b>O que precisamos saber sobre container</b>
+                                <br>
+                                Pode iniciar um container sem nenhuma imagem base, mas  nao tera nenhuma biblioteca ou comando para executar ali dentro.
+                                <br>
+                                Nao existe uma dependencia obrigatoria, mas geralmente se cria um novo container com base em uma imagem. 
+                                <br>
+                                Os containers podem ser parados, reiniciados ou removidos.
+                                <br>
+                                Quando excluir o container tudo que existia dentro dele também sera excluido. Geralmente quando se quer guaradar
+                                cria um volume.
+                                <br>
+
+                                <div id="l5" class="div-margin"><p><h><b>O que e volume</b></h></p></div>
+                                 <br>
+                                 Uma forma  de garantir a persistência de dados ao trabalhar em conteineres. independentemente do ciclo de vida do contêiner. Isso permite que os usuários façam backup de dados e 
+                                 compartilhem sistemas de arquivos entre conteineres com facilidade.
+
+                                 <a href="#l0">indice </a><br />
+                                 <br>
+                                <div id="l6" class="div-margin"><p><h>Comandos basicos</h></p></div>
+                                 <br>
                                 <p><b>Existe um modelo BASE de comandos </b></p>
                                 Seguinte existe um repositorio/bibliotecas que disponibiliza imagens ja prontas e ate com configuracoes
                                 para certo ambientes, como Apache, Node.js, Wordpress entre outros. Para adquirir essa imagem, devemos
@@ -360,7 +466,7 @@
                                 RUN apt-get update -y <br>
                                 RUN apt-get install apache2 -y <br>
                                 EXPOSE 80 <br>
-                                CMD [“/usr/local/apache/bin/apachectl”, “-D”, “FOREGROUND”] <br>
+                                CMD ['/usr/local/apache/bin/apachectl', '-D', 'FOREGROUND'] <br>
 
 
 
@@ -389,7 +495,7 @@
                                             <th scope="row">2</th>
                                             <td> RUN apt-get update -y</td>
                                             <td> RUN apt-get update -y --> RUN(comando de execuçao) apt-get update
-                                                (Atualiza a imagem) , o -y é para não parar a execução com a pergunta
+                                                (Atualiza a imagem) , o -y e para não parar a execucao com a pergunta
                                                 confirma(sim ou nao)
                                             </td>
 
@@ -410,8 +516,8 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">5</th>
-                                            <td>CMD [“/usr/local/apache/bin/apachectl”, “-D”, “FOREGROUND”] </td>
-                                            <td>CMD [“/usr/local/apache/bin/apachectl”, “-D”, “FOREGROUND”] --> CMD e o
+                                            <td>CMD ['/usr/local/apache/bin/apachectl', '-D', “FOREGROUND”] </td>
+                                            <td>CMD ['/usr/local/apache/bin/apachectl', '-D', “FOREGROUND”] --> CMD e o
                                                 comando do prompt ou seja va par alinha de comando, os outros sao para
                                                 executar no LOCAL e suas permisoes
                                                 , certamente muda de acordo com qual servico esta instalando.
@@ -479,7 +585,7 @@
                                 </div>
                                 <div id="l11" class="div-margin"><p><b>Dockerfile</b></p></div>
                                
-                                Para que serve - um arquivo que junta os comandos de instalacao de uma imagem<br>
+                                Para que serve - um arquivo que junta os comandos de instalacao de uma imagem,
                                 podendo esta imagem ser uma simple copia ou uma imagem configurada com
                                 parametrizacao/necessidades do aplicatico.
                                 
@@ -593,7 +699,7 @@
                                             </tr>
                                             <tr> 
                                                 <td>16</td>
-                                                <td>CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]</td>
+                                                <td>CMD ['/usr/sbin/apache2ctl', '-DFOREGROUND']</td>
                                                 <td>Sempre a ultima linha executa observe que o caminho e configuracao do apace </td>
                                             </tr>
                                             
@@ -660,7 +766,94 @@
                             </div>
 
                             <div id="third2" class="tab-pane">
-                                dockerr Menu 3 items
+                                <!-- docker-compose-->
+                                
+                                <div class="col-sm-10">
+                                    <center>
+                                        <table class="table table-dark">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">
+                                                        <div id="lc0" class="div-margin">Indice</div>
+                                                    </th>
+                                                    <th scope="col"></th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td><a href="#lc1">Docker-compose</a></td>
+                                                    <td>Entendendo, compracao c/dockerfile</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td><a href="#lc2">criando docker-compose</a></td>
+                                                    <td>comando e pra que serve</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td><a href="#lc3">exemplo</a></td>
+                                                    <td>o que faz cada comando</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td><a href="#lc3">executando</a></td>
+                                                    <td>comando e passo-a-passo</td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </center>
+                                </div>
+                                
+                                
+                                <br><br>
+                                <h4>Docker-compose</h4>
+                                <br><br>
+                                <h5>Vamos fazer uma comparacao entre dockerfile e docker-compose</h5>
+                                <br>
+                                Ate porque parece fazer as mesmas coisas<br>
+                                Ja sabemos que o dockerfile e um .BAT um arquivo que executa varios comandos sequenciando a execucao, pode pegar 
+                                a imagem do repositorio e tambem pode compor/montar/configurar sua propria imagem.
+                                <br><br>
+                                
+                                
+                                
+                                <div class="col-sm-10">
+                                    <center>
+                                <table class="table table-dark">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Comparacao</th>
+                                        <th scope="col">Dockerfile</th>
+                                        <th scope="col">Docker-compose</th>
+                                      
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">Proposito</th>
+                                        <td>criar uma imagem</td>
+                                        <td>executar container</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Reciprocidade</th>
+                                        <td>Nao e possivel chamar o docker-compose dentro do dockerfile</td>
+                                        <td>Pode chamar o Dockerfile dentro do docker-compose</td>
+                                        
+                                      </tr>
+                                      
+                                    </tbody>
+                                  </table>
+                                </center>
+                               </div>
+                               <a href="#lc0">indice </a><br />
+
+                                <!--fim docker-compose-->
                             </div>
                         </div>
 
@@ -671,17 +864,17 @@
                     <!--fechamento opcao 2 menu lateral -->
                     <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                         aria-labelledby="v-pills-messages-tab">
-                        FooBar
+                        Em andamento, ja lendo ref ao assunto...
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
                         aria-labelledby="v-pills-settings-tab">
-                        FoofooBar
+                        quase la, ja lendo ref ao assunto...
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-settingss" role="tabpanel"
                         aria-labelledby="v-pills-settingss-tab">
-                        FoofooBar2
+                        Falta pouco ...
                     </div>
 
                 </div>
