@@ -819,6 +819,8 @@
                                 Ja sabemos que o dockerfile e um .BAT um arquivo que executa varios comandos sequenciando a execucao, pode pegar 
                                 a imagem do repositorio e tambem pode compor/montar/configurar sua propria imagem.
                                 <br><br>
+                                Como deve ser o formato do docker-composer e sua extensao.
+                                docker-compose.yml <br>
                                 
                                 
                                 
@@ -851,6 +853,115 @@
                                   </table>
                                 </center>
                                </div>
+
+                               <b>Exemplo de como criar docker-compose</b>
+                               <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#home">Sem dockerfile</a></li>
+                                <li><a data-toggle="tab" href="#menu1">Com dockerfile</a></li>
+                                 </ul>
+                              
+                              <div class="tab-content">
+                                <div id="home" class="tab-pane fade in active">
+                                  
+                                    <!--sem dockerfile-->
+                                  <table class="table table-dark">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Comando</th>
+                                        <th scope="col">Descricao</th>
+                                        
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>version: "3.9"</td>
+                                        <td>E a primeira linha de comando,  começa com a definição de version . Isso diradocker-compose --version ao Docker Compose qual versao de configuraaoo estamos usando</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>services:</td>
+                                        <td>Inicia os servicos que serao e como serao executados</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td>webapp:</td>
+                                        <td>Nome do container a ser criador, poderia ser o seu especifico exemplo app: webservice: etc</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">4</th>
+                                        <td> image: apache2:latest  </td>
+                                        <td>Especifica que vamos utilizar uma imagem pronta do dockerhub o (:latest) significa ultima versao,mais atual</td>
+                                        
+                                      </tr>
+                                     
+                                    </tbody>
+                                  </table>
+
+                                     <!--sem dockerfile-->
+                                </div>
+                                <div id="menu1" class="tab-pane fade">
+                                 
+                                    <!--com dockerfile-->
+                                 <table class="table table-dark">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Comando</th>
+                                        <th scope="col">Descricao</th>
+                                        
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>version: "3.9"</td>
+                                        <td>E a primeira linha de comando,  começa com a definição de version . Isso diradocker-compose --version ao Docker Compose qual versao de configuraaoo estamos usando</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>services:</td>
+                                        <td>Inicia os servicos que serao e como serao executados</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td>webapp:</td>
+                                        <td>Nome do container a ser criador, poderia ser o seu especifico exemplo app: webservice: etc</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">4</th>
+                                        <td> build:  </td>
+                                        <td>Especifica que vamos utilizar uma imagem com dockerfile</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">5</th>
+                                        <td> context: ./dir </td>
+                                        <td>Especifica o caminho onde vai estar dockerfile</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">5</th>
+                                        <td>dockerfile: Dockerfile-alternate </td>
+                                        <td>Especifica o nome do dockerfile</td>
+                                        
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                   <!-- com dockerfile-->
+                                </div>
+                                <div id="menu2" class="tab-pane fade">
+                                  <h3>Menu 2</h3>
+                                  <p>Some content in menu 2.</p>
+                                </div>
+                              </div>
                                <a href="#lc0">indice </a><br />
 
                                 <!--fim docker-compose-->
