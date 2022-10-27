@@ -88,6 +88,7 @@
         <!-- Main content -->
         <center>
         <div class="col-sm-10">
+            
             <center>
                 <table class="table table-dark">
                     <thead>
@@ -102,24 +103,117 @@
                       <tr>
                         <th scope="row">1</th>
                         <td>Nivel 1 </td>
-                        <td>RDS - CReate database e manipulação do DB com DBeaver</td>
+                        <td>
+                            RDS <br>
+                            - Create database e conexão/manipulação do DB com DBeaver<br>
+                            - Create  snapshot; <br>
+                            - Take snapshot;<br>
+                            - Restore to point in time; <br>
+                            -  setungs; <br>
+                            - Delete <br>
+                        </td>
                         
                       </tr>
                       <tr>
                         <th scope="row">2</th>
                         <td>Nivel 1</td>
-                        <td>EC2</td>
-                        
-                      </tr>
+                        <td>EC2<br>
+                           - Launch an instance ubuntu<br>
+                           - Launch an instance Windows <br>
+                           - Conexão SSH <br>
+                           - calma que tem mais....
+                        </td>
+                       </tr>
                       
                     </tbody>
                   </table>
-
-                  
-
           </center>
-        </div>
+         </div>
     </center>
+    <h4><b>Create database </b></h4><br>
+    <b><i>RDS >Databases > Create Database</i> </b> <br><br>
+
+    Aqui é onde se cria um banc de dados DB, vamos para as opções que devemos escolher/preencher<br>
+    Todo o curso vai ser na camada free tier<br><br>
+
+    <b>Choose a database creation method</b><br>
+    Temos duas opções aqui.<Br> 
+        <b>Standard create</b> que deixa as configurações manuais;<br>
+        <b>Easy create</b> que tras algumas pré configrações.<br><br><br>
+
+    <b>Engine options</b><br>
+    Aqui temos a escolha de qual bancode de dados vamos utilizar.
+    <b>Version</b> nesta mesma opção temos a escolha da <br>
+    Uma observação aqui, esta escolha é muito importante, principalmente para a parte de DEV. Tanto a escolha da versão do banco como a versão do ambiente que será instalado seu APP<br><br>
+
+    <b>Templates</b><br>
+    temos aqui as opções:<br>
+    <b>Production</b> A de procução onde de cara vemos a <b>Multi-AZ DB Cluster</b><br>
+    <b>Dev/Test</b><br>
+    <b>Free tier</b> ficamos agora com Free tier<br><br>
+
+    <b>Settings</b><br>
+    temos aqui as opções:<br>
+    <b>DB instance identifier</b> Nome da instancia db a ser criada <br>
+    <b>Master username</b> Usuario paea conecxão<br>
+    <b>Auto generate a password</b> temos a opção de deixar gerar automatica ou inserir a senha. <br><br>
+
+    <b>Instance configuration</b><br>
+    Aqui já se preenche meio que automatico, estamos na free tier, então no caso t2.micro. só confere se esta em local free tier <br><br>
+
+    <b>Storage</b><br>
+    temos aqui as opções:<br>
+    <b>Storage type</b> Se auto preenche, mas tem opção de escolha caso queira trocar <br>
+    <b>Allocated storage</b> Qual tamanho, espaço de alocação <br>
+    <b>Storage autoscaling</b> o que acontece aqui, uma vez essa opção marcada, faz uma escalada automatica , tem um comportamento pre definido.
+    Automaticamente almenta a capacidade , em condicoes de gatilho. Dado como exemplo:<br>
+    Quando o espaço disponivel no seu DB for menos que 10%;
+    5GB. E também tem como limitar a capacidade total deste banco com  <b>Maximum storage threshold</b> é como dizerpdoe escalar mas até esse limite.
+    <br><br>
+
+    <b>Connectivity </b><br>
+    <b>Instance configuration</b>    temos aqui as opções:<br> qual a VPC vai utilizar <br>
+    <b>DB Subnet groupInfo</b> <br>
+    <B>Public access</B> a opçoes aqui sao: <b>public</b> ou <B>private</B> <br>
+    <b>VPC security group (firewall)</b> Pode deixar um defult ou pode criar um novo group <br>
+    No caso de escolher <b>New VPC security group name</b> aparece um campo para colocar o nome 
+    <b> Availability Zone</b> Por padrão, o acesso à rede está desativado <br>
+    <b>Additional configuration</b> aqui informa a porta, já coloca a porta padrao
+    <br><br>
+
+    <b>Database authentication</b><br>
+    As opções aqui são de altenticação:<br>
+    <b>Password authentication</b> Esta é a mais simples e tradicional
+    <br><br>
+
+    <b>Monitoring</b><br>
+    <br><br>
+
+    <b>Additional configuration</b><br>
+    Opção para já criar um DB :<br>
+
+    <b>Backup</b> Uma fez marcado <b>Enable automated backups</b> ele ira fazer backup automatico<br>
+    Os detalhes como como será efetuado:<br>
+    <b>Enable automated backups</b> informa o intervalo de tempo ára cada backup<br>
+    <b>Backup window</b> uma vez marcado <b>Choose a window</b>Aqui informa qual a janela tempo/hora especifica<br>
+    <b>Copy tags to snapshots</b><br>
+    <b></b>
+
+
+    <b>Maintenance</b><br>
+    Esta opçaõ atuaçiza a versao do DB<br><br>
+
+    
+    
+
+
+
+
+
+
+
+
+
         <!-- fim Main content -->
     </div>
 </body>
