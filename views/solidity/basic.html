@@ -1,0 +1,987 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP CDN -->
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- ANIMATE.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <! -- CUSTOM CSS -->
+        <link rel="stylesheet" href="public/css/main.css">
+        <link rel="stylesheet" href="public/css/style.css">
+
+        <style type="text/css">
+            /*<![CDATA[*/
+            /* temp */
+
+            .profile-posts .navbar {
+                background-color: grey;
+                min-height: 60px;
+            }
+
+            .profile-posts .navbar-default .navbar-text {
+                color: #ffffff;
+            }
+
+            .profile-posts .nav-tabs>li.active>a,
+            .profile-posts .nav-tabs>.profile-posts li.active>a:focus,
+            .profile-posts .nav-tabs>li.active>a:hover {
+                color: #555;
+                cursor: default;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-bottom-color: rgb(221, 221, 221);
+                border-bottom-color: transparent;
+            }
+
+            /*]]>*/
+        </style>
+
+        <title></title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Material de Apoio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../../index.html">Home
+
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/contato.html"><i class="fas fa-envelope"></i> Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="profile-posts tab">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h4><br>
+                <center>Solidity </center><br>
+            </h4>
+        </section>
+        <!-- Main content -->
+        <div class="row">
+            <div class="col-2">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                        aria-controls="v-pills-home" aria-selected="true" name="v-pills-home-tab">Solidity</a>
+
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                        aria-controls="v-pills-profile" aria-selected="false" name="v-pills-profile-tab">Remix IDE</a>
+
+                   <!--  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                        aria-controls="v-pills-messages" aria-selected="false" name="v-pills-messages-tab">kubernetes</a>
+
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                        aria-controls="v-pills-settings" aria-selected="false" name="v-pills-settings-tab">Jenkins</a>
+
+
+                    <a class="nav-link" id="v-pills-settingss-tab" data-toggle="pill" href="#v-pills-settingss"
+                        role="tab" aria-controls="v-pills-settingss" aria-selected="false"
+                        name="v-pills-settingss-tab">zabbis</a>
+                    
+                    <a class="nav-link" id="v-pills-settingsss-tab" data-toggle="pill" href="#v-pills-settingsss"
+                        role="tab" aria-controls="v-pills-settingsss" aria-selected="false"
+                        name="v-pills-settingsss-tab">Gramafa</a> -->
+
+                </div>
+
+            </div>
+
+            <div class="col-10">
+                <div class="tab-content" id="v-pills-tabContent">
+
+
+                    <!-- opcao 1 menu lateral -->
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab">
+
+                        <!-- Nav tabs opcoes sub menu -->
+                        <ul class="nav nav-tabs">
+                            <li><a class="nav-link active" href="#first" data-toggle="tab">Conceito</a></li>
+
+                            <li><a class="nav-link" href="#second" data-toggle="tab">Variaveis</a></li>
+
+                            <li><a class="nav-link" href="#third" data-toggle="tab">Funçoes</a></li>
+                        </ul><!-- Nav tabs content -->
+
+                        <div class="tab-content">
+                            <div id="first" class="tab-pane active">
+                                <!-- falando de git-->
+                                <br><br>
+                                <h4>Solidity</h4>
+                                <br>
+                                <h5>O que é</h5>
+                                <br>
+                                <p>Solidity é uma linguagem de programação criada para escrever contratos inteligentes na blockchain Ethereum.<br>
+                                A objetivo principal é entender , sendo assim separei aqui por abas, o que achei mais relevante</p>
+                                
+                                <p>È recomendado para inicar utilizar a IDE Remix, pois a mesma já já vem com uma Máquina Virtual JavaScript (JVM) integrada, <br>
+                                 conhecida como Remix VM. Essa VM permite que você desenvolva, teste e depure contratos inteligentes diretamente no navegador </p>
+                                <p></p>
+                                <!--fim landogit-->
+                            </div>
+
+                            <div id="second" class="tab-pane">
+                               <!--menu2 INICIO VARIAVEIS-->
+                               <br><br>
+                               <h6>Partindo do princio de que já temos a IDE Remix e já sabemos utiliza-la</h6>
+
+                                <p>Vamos começar utilizando a pasta Contrato, criando um contrato: Na pasta Contrato, clique com o botão direito e selecione "New file" e nomeie como "Variaveis.sol". Vamos fazer ao mesmo tempo um Hello Word e ver os tipos de variavies</p>
+                                <img src="/public/img-solidity/criandoContrato.png" width="250" height="250" class="img-thumbnail" alt="Criando Contrato" title="Criando Contrato">
+                                
+                               
+                                <p>Observe do lado direito, vamos escrever o contrato:</p>
+                                <p>A linha <code>// SPDX-License-Identifier: MIT</code> no início de um arquivo Solidity é usada para especificar a licença do código.</p>
+                                <p><code>pragma solidity >=0.8.7;</code> indica que o contrato deve ser compilado com a versão 0.8.7 ou superior do compilador Solidity.</p>
+                                <img src="/public/img-soliditylinhasInicias.png" width="250" height="250" class="img-thumbnail" alt="Linhas Iniciais" title="Linhas Iniciais">
+                                
+                                <h5>Criando um contrato</h5>
+                                <p>Essa parte é a inicialização:</p>
+                                <pre><textarea rows=3 cols=100 readonly>
+                                // SPDX-License-Identifier: MIT
+                                    pragma solidity >=0.8.7;
+                                </textarea></pre>
+                                <h5>Declarando as Váriaveis dentro do contrato</h5>
+                                <p> <b>DECLARACAO DAS VARIAVEIS</b> </p>
+                                    <p> [TIPO] [VISIBILIDADE] [ESTADO] [NOME] = [INCIALIZAR A VARIAVEL - OPCIONAL]</p>
+                                <pre><textarea rows=5 cols=100 readonly>
+                                contract variaveis {
+                                string    internal     name  = "hello Word";
+                                string    public       name2  = "hello Word";
+                                string    private      name3  = "hello Word";
+                                }
+                                </textarea></pre> 
+                            
+                            <p><b>1. [TIPO] das Variaveis</b></p>
+                            <p>Tipo Valor: A cópia é independente do original. Modificações na cópia não afetam o original.</p>
+                            <ul>
+                                <li><strong>int e uint::</strong>  Estruturas que armazenam múltiplos elementos.</li>
+                                <li><strong>Números inteiros:</strong> Estruturas que armazenam múltiplos elementos.</li>
+                                <li><strong>address:</strong> Endereços Ethereum  </li>
+                                <li><strong>bytes e string:</strong>  Sequências de bytes e caracteres.  </li>
+                            </ul>
+                            
+                            <p>Tipo Referência: A cópia aponta para os mesmos dados. Modificações na cópia afetam o original.</p>
+                            <ul>
+                                <li><strong>Arrays:</strong>  Estruturas que armazenam múltiplos elementos.</li>
+                                <li><strong>xxx:</strong> Estruturas que armazenam múltiplos elementos.</li>
+                                <li><strong>Scripts:</strong>  Estruturas que mapeiam chaves para valores.  </li>
+                            </ul>
+                            
+                            
+                            <p><b>2. [VISIBILIDADE] das variaveis </b></p>
+                            
+                            <p><b>INTERNAL</b></p>
+                            <p>Acesso: Pode ser acessada dentro do contrato onde foi declarada e em contratos derivados.</p>
+                            <p>Uso: Ideal para variáveis que não precisam ser expostas fora do contrato ou para contratos filhos.</p>
+                            <p>string    internal     name  = "hello Word";  </p>
+                            
+                            <p><b>PUBLIC</b></p>
+                            <p>Acesso: Pode ser acessada por qualquer pessoa, dentro e fora do contrato.</p>
+                            <p>Uso: Útil para variáveis que precisam ser visíveis e acessíveis externamente. Solidity automaticamente cria uma função getter para variáveis públicas.</p>
+                                <p>string    public       name2  = "hello Word"; </p>
+                            
+                            
+                            
+                            
+                            <p> <b>PRIVATE</b></p>
+                            <p>Acesso: Pode ser acessada apenas dentro do contrato onde foi declarada.</p>  
+                            <p>Ideal para variáveis que devem ser completamente ocultas de outros contratos e do mundo exterior.</p>
+                            <p>string    private      name3  = "hello Word";</p>
+                            
+                            <p><b>3. [ESTADO] das variaveis </b></p>
+                            <p> <b>Constantes</b></p>
+                            
+                            <ul>
+                                <li><b> Definição: </b> Variáveis cujo valor é definido na declaração e não pode ser alterado.</li>
+                                <li><b> Uso: </b> Utilizadas para valores fixos que não mudam durante a execução do contrato.</li>
+                                <li><b> Sintaxe: </b> Declaradas com a palavra-chave constant.</li>
+                            </ul>
+                            <p> <b>Imutáveis</b></p>
+                            
+                            <ul>
+                                <li><b> Definição: </b> Variáveis cujo valor é definido uma vez, geralmente no construtor, e não pode ser alterado depois..</li>
+                                <li><b> Uso: </b>Utilizadas para valores que precisam ser definidos na criação do contrato, mas que não devem mudar posteriormente.</li>
+                                <li><b> Sintaxe: </b> Declaradas com a palavra-chave immutable.</li>
+                            </ul>
+                            
+       
+
+                                <!--FIM VARIAVEIS-->
+                            </div>
+
+                            <div id="third" class="tab-pane">
+                              <!-- menu3 FUNCOES-->
+                               
+                                    <h5>Declarando Funções  dentro do contrato</h5>
+                                    <p>Todos os arquivos comentados aqui estão no meu repositorio Git</p>
+                                    <pre><textarea rows=3 cols=100 readonly>
+                                    // SPDX-License-Identifier: MIT
+                                    pragma solidity >=0.8.7;
+                                    </textarea></pre>
+                                    <P>Observe </P>
+
+                                    <pre><textarea rows=10 cols=100 readonly>
+                                    contract PrimeiroContrato {
+                                    
+                                        int public numero = 0;
+                                        function pegaNumero() public view returns (int) {
+                                            return numero;
+                                        }
+                                        function pegaNumero2() public view returns (int resultado) {
+                                            resultado = numero;
+                                        }
+                                    }
+                                    </textarea></pre>
+                                    <p>O nome segue o função padrão camelCase.</p>
+                                    <p><code>int public numero = 0;</code> é a mesma coisa que <code>int internal public nome = 10;</code></p>
+                                    <p>A diferença entre essas duas funções <code>pegaNumero()</code> e <code>pegaNumero2()</code> é que a primeira retorna apenas o resultado, enquanto a segunda retorna a variável e o resultado. Se observa na execução</p>
+
+                                    <ul>
+                                    <li>Quando utilizamos <code>view </code> Indica que a função não modifica o estado do contrato. Ela pode ler dados do estado, mas não pode alterá-los. Ou seja não altera nada na blockchain.</li>
+                                    <li>Quando utilizamos <code>pure</code>Indica que a função não lê nem modifica o estado do contrato. Ela só pode usar os dados fornecidos como parâmetros e variáveis locais.</li>
+                                    </ul>
+                                    <p><strong>Visibilidade da função:</strong> public, external, internal, private.</p>
+                                    <p>Aqui essa função é uma transação, ela altera o estado da blockchain:</p>
+
+
+
+                                    <pre><textarea rows=10 cols=100 readonly>
+                                    function alteraNumero() public {
+                                    numero = 10;
+                                    }
+                                    function incrementa() public {
+                                    numero = numero + 1;
+                                    }
+                                    function incrementaExternal() external {
+                                    numero = numero + 1;
+                                    }
+                                    function incrementaInternal() internal {
+                                    numero = numero + 1;
+                                    }
+                                    function incrementaPrivada() private {
+                                    numero = numero + 1;
+                                    }
+                                    
+                                    </textarea></pre>
+
+
+
+
+                                    <p>Exemplo do retruns:</p>
+                                    <ul>
+                                        <li>Quando utilizamos <code>returns ([TIPO])</code>, o <code>return</code> dentro da função fica <code>return retorno</code>.</li>
+                                        <li>Quando utilizamos <code>returns ([TIPO] nome)</code>, não tem <code>return</code> dentro da função, fica <code>nome = retorno</code>.</li>
+                                    </ul>
+
+                               <!-- FUNCOES-->
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--fechamento opcao 1 menu lateral -->
+
+                    <!-- opcao 2 menu lateral -->
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab">
+
+                        <!-- Nav tabs opcoes sub menu -->
+                        <ul class="nav nav-tabs">
+                            <li><a class="nav-link active" href="#first2" data-toggle="tab">Docker</a></li>
+
+                            <li><a class="nav-link" href="#second2" data-toggle="tab">Dockerfie</a></li>
+
+                            <li><a class="nav-link" href="#third2" data-toggle="tab">Docker-compose</a></li>
+                        </ul><!-- Nav tabs content -->
+
+                        <div class="tab-content">
+                            <div id="first2" class="tab-pane active">
+                                <!-- falando docker-->
+                                <div class="col-sm-10">
+                                    <center>
+                                        <table class="table table-dark">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">
+                                                        <div id="l0" class="div-margin">Indice</div>
+                                                    </th>
+                                                    <th scope="col"></th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td><a href="#l1">O que e Docker</a></td>
+                                                    <td>Entendendo</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td><a href="#l2">Instalacao Docker Desktop no Windows</a></td>
+                                                    <td>Este foi o melhor que encontrei e sem erros de execucao!</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td><a href="#l3">Comandos basico</a></td>
+                                                    <td>o que faz cada comando</td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </center>
+                                </div>
+
+
+                                <div id="l1" class="div-margin">
+                                    <p>
+                                        <h>O que e</h>
+                                    </p>
+                                </div>
+                                <a href="#l0">indice </a><br />
+                                <br>
+                                <b>O Docker</b> Uma das principais vantagnes - mantem seu espaço de trabalho limpo, pois
+                                cada um de seus ambientes sera isolado e pode exclui-los
+                                a qualquer momento, sem impactar o resto. Nao da conflito de softwares. Pode simplesmete
+                                retira o containr, a imagem, e começar tudo de novo
+                                <br>
+                                As imagens ficam armazenadas do DockerHub, tem várias ja com algumas configuracoes. Faça
+                                sei cadastro e
+                                para armazenas as suas configuracoes/imagens
+                                <br><br>
+
+
+                                <div id="l2" class="div-margin">
+                                    <p>
+                                    <h5>Instalacao Docker Desktop no Windows</h5>
+                                    </p>
+                                </div>
+                                <a href="#l0">indice </a><br />
+
+
+                                <br><br>
+                                <b>Pre-requisitos</b>
+                                Existem alguns pre-requisitos que precisamos configurar no windows 10
+                                para saber mais pode consultar Tutorial oficial:
+                                https://docs.microsoft.com/en-us/windows/wsl/install-win10
+                                <br><br>
+
+
+                                <b>Passo 1</b> <br>
+                                (PowerShell Admin): <br> Abre o cmd como admnistrador. e cola copia esse comando abaixo:
+                                <br>
+                                <img src="/public/img-devops/abreCMD.png" class="img-fluid"
+                                    alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+                                <br>
+                                cola copia esse comando abaixo: <br>
+                                dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all
+                                /norestart
+                                <br><br>
+                                <img src="/public/img-devops/digitalcomondaoResultdo.png" class="img-fluid"
+                                    alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+                                <br>Resultado da execução primeiro passo
+                                <br><br>
+                                <b>Passo 2</b> <br>
+                                ainda no (PowerShell Admin): e cola copia esse comando abaixo: <br>
+                                dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+                                <br><br>
+                                <img src="/public/img-devops/digitasegundocomando.png" class="img-fluid"
+                                    alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+                                <br>Resultado da execução segundo passo
+                                <br><br>
+
+
+
+                                <b>Passo 3</b>
+                                REINICIE O COMPUTADOR
+                                <br><br>
+
+                                <b>Passo 4</b>
+                                Abre teu browser e faz o (Download the Linux kernel update package):<br>
+                                copia e cola esse link abaixo para fazer o downloads <br>
+                                https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+                                <br><br>
+                                apos fazer downloads executa<br>
+                                <img src="/public/img-devops/ExecutaArqBaixadoWsl.png" class="img-fluid"
+                                    alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+                                <br><br>
+                                <b>Passo 5</b>
+                                Volta no (PowerShell Admin): e digita o comando abaixo: <br>
+                                wsl --set-default-version 2<br>
+                                <img src="/public/mg-devops/executacomandodenovo.png" class="img-fluid"
+                                    alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+                                <br>Resultado da execucao quinto passo
+                                <br><br>
+
+                                <br><br>
+                                <b>Passo 6</b> (Instale o docker):
+                                Tutorial: https://docs.docker.com/docker-for-windows/install/
+                                <br><br>
+                                Apos dazer o downloads, executa<br>
+                                <img src="/public/img-devops/aposinstalatPrimeiroClick.png" class="img-fluid"
+                                    alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+                                <br><br>
+                                Clica no icone no desctop<br>
+                                <img src="/public/img-devops/dockerinstalado.png" class="img-fluid"
+                                    alt="Gerenciados de tarefas para configurar" title="pre-requisitos">
+
+                                <br> Pronto!! <br><a href="#l0">indice </a><br />
+
+                                <div id="l3" class="div-margin">
+                                    <p>
+                                        <h>Comandos basicos</h>
+                                    </p>
+                                </div>
+                              
+
+                                <br>
+                                <p><b>Existe um modelo BASE de comandos </b></p>
+                                Seguinte existe um repositorio/bibliotecas que disponibiliza imagens ja prontas e ate com configuracoes
+                                para certo ambientes, como Apache, Node.js, Wordpress entre outros. Para adquirir essa imagem, devemos
+                                uscar atravez de alguns comandos. Que uma fez executado baixa/uploads dentro do container.
+                                <br>
+                                No exemplo abaixo, estou montando um servidor Apache2 <br>
+
+                                FROM ubuntu:22.04 <br>
+                                RUN apt-get update -y <br>
+                                RUN apt-get install apache2 -y <br>
+                                EXPOSE 80 <br>
+                                CMD [“/usr/local/apache/bin/apachectl”, “-D”, “FOREGROUND”] <br>
+
+
+
+                                <br><br>
+                                <p><b>Entendendo cada linha de comando</b> </p>
+                                <table class="table table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Linha</th>
+                                            <th scope="col">Comandos dockerfile </th>
+                                            <th scope="col">explicacao</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td> FROM ubuntu:22.04</td>
+                                            <td> FROM --> E A PRIMEIRA LINHA/COMANDO aqui Criar uma imagem base, ou
+                                                imagem pai. A imagem pai vem de uma biblioteca
+                                                de imagens no caso DcockerHub. ficando assim FROM(comando) ubuntu(nome
+                                                da imagem) : 22.04 (sua versao) </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td> RUN apt-get update -y</td>
+                                            <td> RUN apt-get update -y --> RUN(comando de execuçao) apt-get update
+                                                (Atualiza a imagem) , o -y é para não parar a execução com a pergunta
+                                                confirma(sim ou nao)
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>RUN apt-get install apache2 -y </td>
+                                            <td>RUN apt-get install apache2 -y --> Aqui instala o servidor, no exemplo
+                                                está apache2, poderia ser node.js, entre outros
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td> EXPOSE 80</td>
+                                            <td> EXPOSE 80 --> disponibiliza a porta no containner</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>CMD [“/usr/local/apache/bin/apachectl”, “-D”, “FOREGROUND”] </td>
+                                            <td>CMD [“/usr/local/apache/bin/apachectl”, “-D”, “FOREGROUND”] --> CMD e o
+                                                comando do prompt ou seja va par alinha de comando, os outros sao para
+                                                executar no LOCAL e suas permisoes
+                                                , certamente muda de acordo com qual servico esta instalando.
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <br>
+                                Pode acrescentar varios outros comandos no dockerfile, como criar um pasta MKDIR, ou
+                                copiar um arquivo
+                                por exemplo as variaveis de ambinte pre configuradas.<br>   <a href="#l0">indice </a><br />
+
+                                <!--fim falando docker-->
+                            </div>
+
+                            <div id="second2" class="tab-pane">
+                                <!-- falando dockerfile-->
+                                <div class="col-sm-10">
+                                    <center>
+                                        <table class="table table-dark">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">
+                                                        <div id="l00" class="div-margin">Indice</div>
+                                                    </th>
+                                                    <th scope="col"></th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td><a href="#l11">Dockerfile</a></td>
+                                                    <td>Entendendo</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td><a href="#l12">Criando um arquivo dockerfile</a></td>
+                                                    <td>passo-a-passo</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td><a href="#l13">executando o dockerfile</a></td>
+                                                    <td>comando utilizado e o resultado no browser</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td><a href="#l14">copiando projeto para container</a></td>
+                                                    <td>Uma fez que criou seu app/projeto copia para o container dentro do volume criando /var/www/html</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">5</th>
+                                                    <td><a href="#l15 ">exemplos </a></td>
+                                                    <td>repositorio  https://github.com/UrsulaASobrinho/website com  exemplos de dockerfile</td>
+                                                </tr>
+                                               
+
+
+                                            </tbody>
+                                        </table>
+                                    </center>
+                                </div>
+                                <div id="l11" class="div-margin"><p><b>Dockerfile</b></p></div>
+                               
+                                Para que serve - um arquivo que junta os comandos de instalacao de uma imagem<br>
+                                podendo esta imagem ser uma simple copia ou uma imagem configurada com
+                                parametrizacao/necessidades do aplicatico.
+                                
+                                <br>
+                                <a href="#l00">indice </a><br />
+
+                                <div id="l12" class="div-margin"><p><b>Criando um arquivo dockerfile</b></p></div>
+                                <br>
+                                <b>Partirndo do principio que ja tenha instalado no seu pc docker, visual Studio Code, e de preferecia tambem o git</b>
+                                <br><br>
+                                mkdir website [enter] Passos simples, crie um diretorio<br>
+                                cd website [enter] <br>
+                                code .  [enter] uam vez dentro do diretorio criado chame o visual studio code<br>
+                                Uma vez dentro no vscode crie o arquivos dockerfile, veja esse exemplo abaixo: <br><br>
+
+                                
+                                <div class="col-sm-10">
+                                    <center>
+                                <table class="table table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">dockerfile</th>
+                                            <th scope="col">explica linha a linha</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td> FROM ubuntu</td>
+                                                <td>Comando que inicia a execucao ja sabemos que e a primeira linha </td> 
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>RUN apt-get update -y</td>
+                                                <td>atualzia</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>RUN apt-get install apache2 -y</td>
+                                                <td>instala no caso aqui a opcao foi servdor apache</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td># Variaveis ​​de ambiente no Apache, estas variaveis estao vinculadas apache2.conf</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>ENV APACHE_LOCK_DIR="/var/lock/apache2"</td>
+                                                <td>aqui ja sao aqueles comoando extra, neste caso estou configurando as variaveis de ambiente do apache</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>ENV APACHE_PID_FILE="/var/run/apache2/apache2.pid"</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td> ENV APACHE_RUN_USER="www-data"</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td> ENV APACHE_RUN_GROUP="www-data"</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>ENV APACHE_LOG_DIR="/var/log/apache2"</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>ENV APACHE_SERVER_NAME="localhost"</td>
+                                                <td></td>
+                                            </tr>
+                                           
+                                            <tr>
+                                                <td>10</td>
+                                                <td> VOLUME /var/www/html/</td>
+                                                 <td>Aqui monta o volume que sera o diretorio onde vamos colocar o projeto/app </td>
+                                            </tr>
+                                           
+                                            <tr>
+                                                <td>11</td>
+                                                <td>#Este e o arquivo de configuracao principal do servidor.</td>
+                                                <td></td>
+                                             </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td>COPY apache-conf /etc/apache2/apache2.conf</td>
+                                                <td>Aqui quando criei o diretorio no pc copiei para a pasta esse arquivo, que faz as varieaveis de ambiente que configurei acima</td>
+                                            </tr>
+                                           
+                                            <tr>
+                                                <td>13</td>
+                                                <td>#Expose Apache</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>14</td>
+                                                <td>EXPOSE 80</td>
+                                                <td>Aqui determina qual porta sera disponibilizada no container</td>
+                                            </tr>
+                                            <tr><td>15</td>
+                                                <td># Launch Apache2</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr> 
+                                                <td>16</td>
+                                                <td>CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]</td>
+                                                <td>Sempre a ultima linha executa observe que o caminho e configuracao do apace </td>
+                                            </tr>
+                                            
+                                        </tr> 
+                                
+                                    </tbody>
+                                </table>
+                                </center>
+                                </div>
+                                <br>
+                                <div id="l13" class="div-margin"><p><b>Executando o dockerfile</b></p></div>
+                                 <br>
+                                 NO Vcode va para um terminal<br>
+                                 vamos gerar a imagem, com o seguinyte comando<br>
+                                 <div class="col-sm-10">
+                                    <center>
+                                <table class="table table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">comando</th>
+                                            <th scope="col">explica linha a linha</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td> docker image build -t website .</td>
+                                                <td>docker image build -t nome da imagem (ponto) qoer dizer neste diretorio. Automaticamente va procurar o dockerfile </td> 
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td> docker image ls</td>
+                                                <td>Este comando mostra a imagem criada </td> 
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td> docker container run -d -p8081:80 website</td>
+                                                <td>cria o conatiner (onde vamos colocar o projeto) run(executa) -d -p(porta do PC local):(porta que se colocou no dockerfile) nome da imagem que gerou e vai utilizar   </td> 
+                                            </tr>
+                                    </tbody>
+                                </table>
+                                </center>
+                                </div>
+                                <Br> Agora e so testar abrindo um browser e digitar http://localhost:8081/ <br>
+                                    <a href="#l00">indice </a><br />
+
+                                    <div id="l14" class="div-margin"><p><b>copiando projeto para container </b></p></div>
+                                    <br>
+
+                                    No terminal que abriu dentro do vscode, tem quer saber qual e o nome do container_id<br>
+                                    localize uma sequencia de codigo abaixo no nome CONTAINER_ID <br><br>
+                                    docker container ls [enter]<br>
+                                    este sera seu como exemplo aqui  o container sera este   CONTAINER ID = 08482cd96ade <br>
+                                    docker cp . 08482cd96ade:/var/www/html [enter] <br>
+                                    Observer (08482cd96ade) o id do container encontrado (/var/www/html ) o voluem que criamos no dockerfile
+                                    <br>volte a seu browser  e  estara seu projeto. <br>
+                                    <a href="#l00">indice </a><br />
+
+
+                                <!-- fim falando dockerfile-->
+                            </div>
+
+                            <div id="third2" class="tab-pane">
+                                <!-- inicia docker-compose-->
+
+                               <h2><b>Docker-compose</b></h2><br><br>
+
+
+                                <b>Vamos fazer uma comparacao entre dockerfile e docker-compose</b><br>
+
+                                 Ate porque parece fazer as mesmas coisas
+                                Ja sabemos que o dockerfile e um .BAT um arquivo que executa varios comandos <br>
+                                sequenciando a execucao, pode pegar a imagem do repositorio e tambem pode compor/montar/configurar sua propria imagem.
+                                <br>
+                                Como deve ser o formato do docker-composer e sua extensao. docker-compose.yml   
+                                <br>    
+                                <div class="col-sm-10">
+                                    <center>
+                                        <table class="table table-dark">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">
+                                                        <div id="#dkcomp0" class="div-margin">Indice</div>
+                                                    </th>
+                                                    <th scope="col"></th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Comparacao</th>
+                                                    <td><a href="#dkcomp1">Dockerfile</a></td>
+                                                    <td>Docker-compose</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Proposito</th>
+                                                    <td><a href="#dkcomp2">criar uma imagem</a></td>
+                                                    <td>executar container</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Reciprocidade</th>
+                                                    <td><a href="#dkcomp3">Nao e possivel chamar o docker-compose dentro do dockerfile</a></td>
+                                                    <td>Pode chamar o Dockerfile dentro do docker-compose</td>
+                                                </tr>
+                                          
+                                            </tbody>
+                                        </table>
+                                    </center>
+                                </div>
+
+                                <B>Exemplo de como criar docker-compose</B>
+
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">exemplo Sem Dockerfile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">exemplo Com Dockerfile</a>
+                                    </li>
+                                    
+                                  </ul>
+                                  <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                                        <div class="col-sm-10">
+                                            <center>
+                                        <table class="table table-dark">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">comando</th>
+                                                    <th scope="col">Descricao</th>
+        
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td> version: "3.9"</td>
+                                                        <td>E a primeira linha de comando, comeca com a definicao de version . Isso diradocker-compose --version ao Docker Compose qual versao de configuraaoo estamos usando </td> 
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>services:</td>
+                                                        <td>Inicia os servicos que serao e como serao executados </td> 
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>webapp:</td>
+                                                        <td>Nome do container a ser criador, poderia ser o seu especifico exemplo app: webservice: etc</td> 
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>image: apache2:latest</td>
+                                                        <td>Especifica que vamos utilizar uma imagem pronta do dockerhub o (:latest) significa ultima versao,mais atual</td> 
+                                                    </tr>
+                                                    
+                                            </tbody>
+                                        </table>
+                                        </center>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                                        <div class="col-sm-10">
+                                            <center>
+                                        <table class="table table-dark">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">comando</th>
+                                                    <th scope="col">Descricao</th>
+        
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td> version: "3.9"</td>
+                                                        <td>E a primeira linha de comando, comeca com a definicao de version . Isso diradocker-compose --version ao Docker Compose qual versao de configuraaoo estamos usando </td> 
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>services:</td>
+                                                        <td>Inicia os servicos que serao e como serao executados </td> 
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>webapp:</td>
+                                                        <td>Nome do container a ser criador, poderia ser o seu especifico exemplo app: webservice: etc</td> 
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>build:</td>
+                                                        <td>Especifica que vamos utilizar uma imagem com dockerfile</td> 
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>context: ./dir</td>
+                                                        <td>Especifica o caminho onde vai estar dockerfile</td> 
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>image: apache2:latest</td>
+                                                        <td>Especifica que vamos utilizar uma imagem pronta do dockerhub o (:latest) significa ultima versao,mais atual</td> 
+                                                    </tr>
+                                                   
+                                                    
+                                            </tbody>
+                                        </table>
+                                        </center>
+                                        </div>
+
+                                    </div>
+                                   
+                                  </div>
+
+                                <!--fim docker-compose-->
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <!--fechamento opcao 2 menu lateral -->
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                        aria-labelledby="v-pills-messages-tab">
+                       <!-- Kubernete-->
+                       <h4><b>Kubernetes</b></h4>
+                       <br>
+                       Nao da para passar sem falar do Kubernetes, entao vamos para a maior duvida <br> <br>
+
+                       <B>Qual a diferenca entre Docker e Kubernetes</B> <br> <br>
+
+                       Vejamos o que ja sabemos do Docker. E uma plataforma de conteinerizacao, capaz de construir, distribuir e rodar conteineres Docker.  
+                       <br>
+                       Ja Kubernetes e uma plataforma de orquestracao de conteineres para plataformas como Docker. 
+                       <br>
+                       Isso significa, em primeiro lugar, que sao tecnologias completamente diferentes, mas que podem trabalhar muito bem juntas. 
+                       <br>
+                       Entao, a relacao nao e de contraposicao - (marcada pelo versus) -, mas de complementariedade. 
+                       <br>
+                       No entanto, a juncao nao e obrigatoria.
+
+                       <!-- fim Kubernete-->
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                        aria-labelledby="v-pills-settings-tab">
+                        FoofooBar
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-settingss" role="tabpanel"
+                        aria-labelledby="v-pills-settingss-tab">
+                        FoofooBar2
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settingsss" role="tabpanel"
+                    aria-labelledby="v-pills-settingsss-tab">
+                    FoofooBar3
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

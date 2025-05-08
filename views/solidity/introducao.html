@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spring</title>
+    <!-- HEAD -->
+    <%- include('..//partials//head.html') %>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <%- include('..//partials//navbar.html') %>
+
+    <!-- MAIN CONTENT -->
+    <main role="main">
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="grupo">
+                        <br><br>
+                        <h4>Solidity</h4>
+                        <br><br>
+                        <h5>O que é</h5>
+                        <br>
+                        <p>Solidity é uma linguagem de programação criada para escrever contratos inteligentes na blockchain Ethereum.</p>
+                        <p>Vamos começar com uma IDE para demonstrar as funções básicas do Solidity e entender o básico.</p>
+                        
+                        <h5>REMIX IDE</h5>
+                        <p>O Remix IDE é uma ferramenta sem instalação com interface gráfica para o desenvolvimento de contratos inteligentes.</p>
+                        <p><a href="https://remix.ethereum.org/">Remix IDE</a></p>
+                        <img src="img-solitidy/remix-ide.png" width="450" height="450" class="img-thumbnail" alt="Remix IDE" title="Remix IDE">
+                        
+                        <h6>Para início de conversa, vamos começar codando :)</h6>
+                        <p>Um a IDE que segue o padrao de outras ide´s , então é bem intuitiva. Observe as pastas do lado direito:</p>
+                        <ul>
+                            <li><strong>Deps:</strong> Dependências. Esta pasta contém bibliotecas e módulos que seu contrato inteligente pode precisar para funcionar corretamente.</li>
+                            <li><strong>Contrato:</strong> É onde você escreve e armazena seus contratos inteligentes.</li>
+                            <li><strong>Teste:</strong> É usada para armazenar scripts de teste.</li>
+                            <li><strong>Scripts:</strong> É usada para armazenar scripts que ajudam a automatizar tarefas.</li>
+                        </ul>
+                        
+                        <p>Vamos começar utilizando a pasta Contrato, criando um contrato: Na pasta Contrato, clique com o botão direito e selecione "New file" e nomeie como "Variaveis.sol". Vamos fazer ao mesmo tempo um Hello Word e os tipos de variavies</p>
+                        <img src="img-solitidy/criandoContrato.png" width="250" height="250" class="img-thumbnail" alt="Criando Contrato" title="Criando Contrato">
+                        
+                        <p>Observe do lado direito, vamos escrever o contrato:</p>
+                        <p>A linha <code>// SPDX-License-Identifier: MIT</code> no início de um arquivo Solidity é usada para especificar a licença do código.</p>
+                        <p><code>pragma solidity >=0.8.7;</code> indica que o contrato deve ser compilado com a versão 0.8.7 ou superior do compilador Solidity.</p>
+                        <img src="img-solitidy/linhasInicias.png" width="250" height="250" class="img-thumbnail" alt="Linhas Iniciais" title="Linhas Iniciais">
+                        
+                        <h5>Criando um contrato</h5>
+                        <p>Essa parte é a inicialização:</p>
+                        <pre><textarea rows=3 cols=100 readonly>
+  // SPDX-License-Identifier: MIT
+  pragma solidity >=0.8.7;
+</textarea></pre>
+<h5>Declarando as Váriaveis dentro do contrato</h5>
+<p> <b>DECLARACAO DAS VARIAVEIS</b> </p>
+ <p> [TIPO] [VISIBILIDADE] [ESTADO] [NOME] = [INCIALIZAR A VARIAVEL - OPCIONAL]</p>
+<pre><textarea rows=5 cols=100 readonly>
+contract variaveis {
+string    internal     name  = "hello Word";
+string    public       name2  = "hello Word";
+string    private      name3  = "hello Word";
+}
+</textarea></pre> 
+
+<p><b>1. [TIPO] das Variaveis</b></p>
+<p>Tipo Valor: A cópia é independente do original. Modificações na cópia não afetam o original.</p>
+<ul>
+  <li><strong>int e uint::</strong>  Estruturas que armazenam múltiplos elementos.</li>
+  <li><strong>Números inteiros:</strong> Estruturas que armazenam múltiplos elementos.</li>
+   <li><strong>address:</strong> Endereços Ethereum  </li>
+   <li><strong>bytes e string:</strong>  Sequências de bytes e caracteres.  </li>
+</ul>
+
+<p>Tipo Referência: A cópia aponta para os mesmos dados. Modificações na cópia afetam o original.</p>
+<ul>
+  <li><strong>Arrays:</strong>  Estruturas que armazenam múltiplos elementos.</li>
+  <li><strong>xxx:</strong> Estruturas que armazenam múltiplos elementos.</li>
+   <li><strong>Scripts:</strong>  Estruturas que mapeiam chaves para valores.  </li>
+</ul>
+
+
+<p><b>2. [VISIBILIDADE] das variaveis </b></p>
+
+<p><b>INTERNAL</b></p>
+<p>Acesso: Pode ser acessada dentro do contrato onde foi declarada e em contratos derivados.</p>
+<p>Uso: Ideal para variáveis que não precisam ser expostas fora do contrato ou para contratos filhos.</p>
+<p>string    internal     name  = "hello Word";  </p>
+
+<p><b>PUBLIC</b></p>
+<p>Acesso: Pode ser acessada por qualquer pessoa, dentro e fora do contrato.</p>
+<p>Uso: Útil para variáveis que precisam ser visíveis e acessíveis externamente. Solidity automaticamente cria uma função getter para variáveis públicas.</p>
+ <p>string    public       name2  = "hello Word"; </p>
+
+
+
+
+<p> <b>PRIVATE</b></p>
+<p>Acesso: Pode ser acessada apenas dentro do contrato onde foi declarada.</p>  
+<p>Ideal para variáveis que devem ser completamente ocultas de outros contratos e do mundo exterior.</p>
+<p>string    private      name3  = "hello Word";</p>
+
+<p><b>3. [ESTADO] das variaveis </b></p>
+<p> <b>Constantes</b></p>
+
+<ul>
+  <li><b> Definição: </b> Variáveis cujo valor é definido na declaração e não pode ser alterado.</li>
+  <li><b> Uso: </b> Utilizadas para valores fixos que não mudam durante a execução do contrato.</li>
+    <li><b> Sintaxe: </b> Declaradas com a palavra-chave constant.</li>
+</ul>
+<p> <b>Imutáveis</b></p>
+
+<ul>
+  <li><b> Definição: </b> Variáveis cujo valor é definido uma vez, geralmente no construtor, e não pode ser alterado depois..</li>
+  <li><b> Uso: </b>Utilizadas para valores que precisam ser definidos na criação do contrato, mas que não devem mudar posteriormente.</li>
+  <li><b> Sintaxe: </b> Declaradas com a palavra-chave immutable.</li>
+</ul>
+
+
+
+
+
+
+<h5>Declarando Funções  dentro do contrato</h5>
+<p>Todos os arquivos comentados aqui estão no meu repositorio Git</p>
+<pre><textarea rows=3 cols=100 readonly>
+  // SPDX-License-Identifier: MIT
+  pragma solidity >=0.8.7;
+</textarea></pre>
+<P>Observe </P>
+
+<pre><textarea rows=10 cols=100 readonly>
+  contract PrimeiroContrato {
+  
+    int public numero = 0;
+      function pegaNumero() public view returns (int) {
+        return numero;
+    }
+      function pegaNumero2() public view returns (int resultado) {
+        resultado = numero;
+    }
+  }
+  </textarea></pre>
+<p>O nome segue o função padrão camelCase.</p>
+<p><code>int public numero = 0;</code> é a mesma coisa que <code>int internal public nome = 10;</code></p>
+<p>A diferença entre essas duas funções <code>pegaNumero()</code> e <code>pegaNumero2()</code> é que a primeira retorna apenas o resultado, enquanto a segunda retorna a variável e o resultado. Se observa na execução</p>
+
+<ul>
+  <li>Quando utilizamos <code>view </code> Indica que a função não modifica o estado do contrato. Ela pode ler dados do estado, mas não pode alterá-los. Ou seja não altera nada na blockchain.</li>
+  <li>Quando utilizamos <code>pure</code>Indica que a função não lê nem modifica o estado do contrato. Ela só pode usar os dados fornecidos como parâmetros e variáveis locais.</li>
+</ul>
+<p><strong>Visibilidade da função:</strong> public, external, internal, private.</p>
+<p>Aqui essa função é uma transação, ela altera o estado da blockchain:</p>
+
+
+
+<pre><textarea rows=10 cols=100 readonly>
+function alteraNumero() public {
+numero = 10;
+}
+function incrementa() public {
+numero = numero + 1;
+}
+function incrementaExternal() external {
+numero = numero + 1;
+}
+function incrementaInternal() internal {
+numero = numero + 1;
+}
+function incrementaPrivada() private {
+numero = numero + 1;
+}
+}
+</textarea></pre>
+
+
+
+
+<p>Exemplo do retruns:</p>
+<ul>
+    <li>Quando utilizamos <code>returns ([TIPO])</code>, o <code>return</code> dentro da função fica <code>return retorno</code>.</li>
+    <li>Quando utilizamos <code>returns ([TIPO] nome)</code>, não tem <code>return</code> dentro da função, fica <code>nome = retorno</code>.</li>
+</ul>
+
+
+                        
+
+                        
+                        <div class="card text-white bg-primary mb-3">
+                            <div class="card-header">
+                                Possíveis erros
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Os detalhes de return</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <%- include('..//partials//footer.html') %>
+</body>
+
+</html>
+
+
